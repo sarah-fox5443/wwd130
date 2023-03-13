@@ -20,9 +20,126 @@
         
     </header>
     <body>
-        <h1></h1>
-
-
+        <h1>FAQ</h1>
+        <h2>What do I do if I feel overwhemled?</h2>
+        <p>Take a few calming breaths and look for your question further down it will direct you to the right link to get more information.</p>
+        <h2>Why is work nessiary?</h2>
+        <p> To pay for your cats/ dogs! They depend on you! Also you need monay to pay for essentials, books, and other luxuie items.</p>
+        <h2>How can one ID a bad work place early on?</h2>
+        <p>Most commonly you can get a vibe through your recruiter. However through the indeed site and others employees rank the job. Which is a job resource for the general job vibe.</p>
+        <h2>Where do I start for a resume?</h2>
+        <p>Look for your resource tab! Here's the link: </p>
+        <h2>Where do I start for a cover letter?</h2>
+        <p>Look for your resource tab! Here's the link:</p>
+        <h2>Where do I start job looking?</h2>
+        <p>Look for your resource tab! Here's the link:</p>
+        <div id="feedback"></div>
+        <form action="wwr/contactus.html" method="post">
+         <ul>
+           <li>
+             <label for="name">Name:</label>
+             <input type="text" id="name" name="user_name" />
+           </li>
+           <li>
+             <label for="mail">Email:</label>
+             <input type="email" id="mail" name="user_email" />
+           </li>
+           <li>
+             <label for="msg">Message:</label>
+             <textarea id="msg" name="user_message"></textarea>
+           </li>
+           <li class="button">
+             <button type="submit">Send your message</button>
+           </li>
+         </ul>
+         </form>
+         
+     <style>
+       form {
+   /* Center the form on the page */
+   margin: 0 auto;
+   width: 400px;
+   /* Form outline */
+   padding: 1em;
+   border: 1px solid #ccc;
+   border-radius: 1em;
+ }
+ 
+ ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+ }
+ 
+ form li + li {
+   margin-top: 1em;
+ }
+ 
+ label {
+   /* Uniform size & alignment */
+   display: inline-block;
+   width: 90px;
+   text-align: right;
+ }
+ 
+ input,
+ textarea {
+   /* To make sure that all text fields have the same font settings
+      By default, textareas have a monospace font */
+   font: 1em sans-serif;
+ 
+   /* Uniform text field size */
+   width: 300px;
+   box-sizing: border-box;
+ 
+   /* Match form field borders */
+   border: 1px solid #999;
+ }
+ 
+ input:focus,
+ textarea:focus {
+   /* Additional highlight for focused elements */
+   border-color: #000;
+ }
+ 
+ textarea {
+   /* Align multiline text fields with their labels */
+   vertical-align: top;
+ 
+   /* Provide space to type some text */
+   height: 5em;
+ }
+ 
+ .button {
+   /* Align buttons with the text fields */
+   padding-left: 90px; /* same size as the label elements */
+ }
+ 
+ button {
+   /* This extra margin represent roughly the same space as the space
+      between the labels and their text fields */
+   margin-left: 0.5em;
+ }
+     </style>
+     <script>
+ 
+       const feedbackElement = document.getElementById('feedback');
+ 
+       const formElement = document.forms[0];
+     
+       formElement.addEventListener('submit', function(e) {
+    
+           e.preventDefault();
+          
+           feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+           // make the feedback element visible.
+           feedbackElement.style.display = "block";
+           // add a class to move everything down so our message doesn't cover it.
+           document.body.classList.toggle('moveDown');
+       });
+   </script>
+     
+      
     </body>
     <footer>
         <p>Professional Development; 2023 - Sarah Fox - WWD130 Section 11</p>
