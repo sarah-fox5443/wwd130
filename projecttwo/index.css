@@ -1,0 +1,67 @@
+html{
+    max-width: 1600px;
+    background-color: #265440;
+}
+.dogo{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0;
+    column-gap: 0px;
+}
+.fred {
+    width: 200px;
+    column-gap: 0px;
+}
+nav {
+    background-color: #F9EDCC;
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "Abril Fatface", times , sans-serif;
+  }
+  nav  {
+    list-style-type: none;
+    display: flex;
+  
+  }
+  nav a {
+    padding:1em;
+    min-width: 120px;
+    min-height: 60px;
+    text-decoration: none;
+    padding: 10px;
+  
+  }
+  nav a:link, nav a:visited {
+    color: #265440;
+  }
+  nav a:hover {
+    color: #493548;
+    background-color: #F9EDCC;
+  }
+  h1{
+    background-color: #F9EDCC;
+    color: #265440;
+    margin: 25px 25px 25px 25px;
+  }
+  .redfred{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%; 
+    column-gap: 50px;
+    row-gap: 25px;
+    background-color: #F9EDCC;
+    color: #265440;
+    margin: 25px 25px 25px 25px;
+  }
+  #red{
+    width:50%;
+    
+  }
+footer{
+    background-color: #F9EDCC;
+    color: #265440;
+    margin: 5px 5px 5px 5px;
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
