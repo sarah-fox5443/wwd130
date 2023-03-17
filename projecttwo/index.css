@@ -13,11 +13,12 @@ html{
     column-gap: 0px;
 }
 nav {
-    background-color: #F9EDCC;
+    background-color: #878E99;
     line-height: 3em;
     text-align: center;
     font-size: 1.5em;
     font-family: "Abril Fatface", times , sans-serif;
+
   }
   nav  {
     list-style-type: none;
@@ -33,7 +34,7 @@ nav {
   
   }
   nav a:link, nav a:visited {
-    color: #265440;
+    color: #493548;
   }
   nav a:hover {
     color: #493548;
@@ -59,8 +60,8 @@ nav {
     
   }
 footer{
-    background-color: #F9EDCC;
-    color: #265440;
+    background-color: #878E99;
+    color: #493548;
     margin: 5px 5px 5px 5px;
     display:grid;
     grid-template-columns: 25% 25% 25% 25%;
