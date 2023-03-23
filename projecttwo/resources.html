@@ -5,7 +5,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <title>Second Website</title>
-    <link="stylesheet.html" href="#"/>
+    <link type="text/css" rel="stylesheet" href="index.css" />
     
     <header>
         
@@ -28,7 +28,56 @@
 <h2>Resumes</h2>
 <p>Commonly School and other counselers say that you need a new resume for each job. To make a powerful resume you need to follow this outline.</p>
 <image scr="" alt="Pic of Good resume">
-<h2>Check your Resume</h2>
+<!-- Compent coding -->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+</div>
+
+<!-- Tab content -->
+<div id="London" class="tabcontent">
+  <h3>Professionalism</h3>
+  <p>A good Resume should look professional. So like we would look to professional clothing you must have a profesional essay that looks the same. So like we don't have colorful clothing we also don't have colorful resumes.</p>
+  <a href="https://resumegenius.com/resume-samples">Resume Exaples</a>
+  <a href="https://docs.google.com/document/d/1y-rD4ITwTlRDqV5_Oj3_L504Jc13_ngionUhd_Tl9RE/edit">Resume Dos to Use</a>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Advertising</h3>
+  <p>In a good resume we have self advertising. So including desirable triats like training experince and large group management. Use these links to check you writing:</p>
+  <a href="https://enhancv.com/resources/resume-checker/">Resume checker</a>
+  <a href="https://www.jobscan.co/">Resume checker 2</a>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Only the Best</h3>
+  <p>Only use your best experince in your resume! If you worked at McDonalds first you could probably go without the extra job on your resume.</p>
+</div>
+
+<script>
+  function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
 <p>Link for good Resume checker: </p>
 <h2>Cover Letter</h2>
 <p>This is commonly required for higher paying jobs and we want that. So creating a cover letter means putting on out their for more.</p>

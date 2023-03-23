@@ -5,7 +5,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <title>Second Website</title>
-    <link="stylesheet.html" href="#"/>
+    <link type="text/css" rel="stylesheet" href="index.css" />
     
     <header>
         
@@ -20,19 +20,54 @@
         
     </header>
     <body>
-        <h1>FAQ</h1>
-        <h2>What do I do if I feel overwhemled?</h2>
+      <!-- Component coding Accordion-->
+      <h1>FAQ</h1>
+      <button class="accordion"><h2>What do I do if I feel overwhemled?</h2></button>
+      <div class="panel">
         <p>Take a few calming breaths and look for your question further down it will direct you to the right link to get more information.</p>
-        <h2>Why is work nessiary?</h2>
+      </div>
+      
+      <button class="accordion"><h2>Why is work nessiary?</h2></button>
+      <div class="panel">
         <p> To pay for your cats/ dogs! They depend on you! Also you need monay to pay for essentials, books, and other luxuie items.</p>
-        <h2>How can one ID a bad work place early on?</h2>
+      </div>
+      
+      <button class="accordion"><h2>How can one ID a bad work place early on?</h2></button>
+      <div class="panel">
         <p>Most commonly you can get a vibe through your recruiter. However through the indeed site and others employees rank the job. Which is a job resource for the general job vibe.</p>
-        <h2>Where do I start for a resume?</h2>
+      </div>
+
+      <button class="accordion"><h2>Where do I start for a resume?</h2></button>
+      <div class="panel">
         <p>Look for your resource tab! Here's the link: </p>
-        <h2>Where do I start for a cover letter?</h2>
-        <p>Look for your resource tab! Here's the link:</p>
-        <h2>Where do I start job looking?</h2>
-        <p>Look for your resource tab! Here's the link:</p>
+      </div>
+
+       <button class="accordion"><h2>Where do I start for a cover letter?</h2></button>
+      <div class="panel">
+        <p>Look for your resource tab! Here's the link: </p>
+      </div>
+      <button class="accordion"><h2>Where do I start job looking?</h2></button>
+      <div class="panel">
+        <p>Look for your resource tab! Here's the link: </p>
+      </div>
+      <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
+      </script>
+        
+
         <div id="feedback"></div>
         <form action="wwr/contactus.html" method="post">
          <ul>
