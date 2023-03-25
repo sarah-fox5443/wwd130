@@ -40,7 +40,7 @@ nav {
     color: #493548;
     background-color: #F9EDCC;
   }
-  h1{
+  h1, h2, h3{
     background-color: #F9EDCC;
     color: #265440;
     margin: 25px 25px 25px 25px;
@@ -128,4 +128,19 @@ nav {
   background-color: white;
   display: none;
   overflow: hidden;
+}
+.fair{
+  display: block;
+
+
+}
+
+#images{
+  width: 200px;
+}
+#meryle{
+  width: 75%; 
+  text-align: center;
+  background-color: #F9EDCC;
+  color: #265440;
 }
