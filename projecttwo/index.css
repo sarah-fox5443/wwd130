@@ -101,12 +101,9 @@ nav {
   border: 1px solid #878E99;
   border-top: none;
 }
-
-/* compent accordion */
-/* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-  background-color: #493548;
-  color: #F9EDCC;
+  background-color: #F9EDCC;
+  color: #493548;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -115,22 +112,15 @@ nav {
   outline: none;
   transition: 0.4s;
 }
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
   background-color: #493548;
 }
-
-/* Style the accordion panel. Note: hidden by default */
 .panel {
   padding: 0 18px;
   background-color: #493548;
   display: none;
   overflow: hidden;
 }
-
-/*  */
-
 .fair{
   display: block;
 }
@@ -143,8 +133,6 @@ nav {
 #meryle{
   width: 75%; 
   text-align: center;
-  background-color: #F9EDCC;
-  color: #265440;
 }
 .dodo{
 
