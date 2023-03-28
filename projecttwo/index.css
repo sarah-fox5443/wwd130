@@ -18,12 +18,10 @@ nav {
     text-align: center;
     font-size: 1.5em;
     font-family: "Abril Fatface", times , sans-serif;
-
   }
   nav  {
     list-style-type: none;
     display: flex;
-  
   }
   nav a {
     padding:1em;
@@ -31,7 +29,6 @@ nav {
     min-height: 60px;
     text-decoration: none;
     padding: 10px;
-  
   }
   nav a:link, nav a:visited {
     color: #493548;
@@ -66,15 +63,16 @@ nav {
     display:grid;
     grid-template-columns: 25% 25% 25% 25%;
 }
+/*  */
 
-/* component  tabs*/
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  border: 3px solid #878E99;
+  background-color: #493548;
+  color: #F9EDCC;
 }
 
-/* Style the buttons that are used to open the tab content */
+
 .tab button {
   background-color: inherit;
   float: left;
@@ -83,31 +81,32 @@ nav {
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
+  color: #F9EDCC;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: #F9EDCC;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: #878E99;
 }
 
 /* Style the tab content */
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #878E99;
   border-top: none;
 }
 
 /* compent accordion */
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-  background-color: #eee;
-  color: #444;
+  background-color: #493548;
+  color: #F9EDCC;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -119,28 +118,34 @@ nav {
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
-  background-color: #ccc;
+  background-color: #493548;
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
   padding: 0 18px;
-  background-color: white;
+  background-color: #493548;
   display: none;
   overflow: hidden;
 }
+
+/*  */
+
 .fair{
   display: block;
-
-
 }
 
 #images{
   width: 200px;
+  height: 200px;
+  padding: 10px;
 }
 #meryle{
   width: 75%; 
   text-align: center;
   background-color: #F9EDCC;
   color: #265440;
+}
+.dodo{
+
 }
