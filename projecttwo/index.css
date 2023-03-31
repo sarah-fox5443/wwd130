@@ -105,7 +105,7 @@ nav {
   background-color: #F9EDCC;
   color: #493548;
   cursor: pointer;
-  padding: 18px;
+
   width: 100%;
   text-align: left;
   border: none;
@@ -115,11 +115,13 @@ nav {
 .active, .accordion:hover {
   background-color: #493548;
 }
+
 .panel {
   padding: 0 18px;
-  background-color: #493548;
-  display: none;
+  max-height: 0;
   overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  color: #F9EDCC;
 }
 .fair{
   display: block;
@@ -133,7 +135,4 @@ nav {
 #meryle{
   width: 75%; 
   text-align: center;
-}
-.dodo{
-
 }
